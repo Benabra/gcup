@@ -1,0 +1,100 @@
+
+[1mChecking services for project: lv-gcp-dcx-dev-dp-ds-ww[0m
+==================================================
+
+Running Services:
++-------------------+-----------------------------------------------------+---------+-------------------------------+-------------------------------+
+|      SERVICE      |                      RESOURCE                       | STATUS  |          CREATED AT           |          UPDATED AT           |
++-------------------+-----------------------------------------------------+---------+-------------------------------+-------------------------------+
+| Cloud Run         | hello                                               | RUNNING | 2024-06-18T12:54:21.072986Z   |                               |
+| Compute Engine    | gke-lv-kub-dev-dp-ds-lv-npl-dev-dp-ds-4eecae7f-2b3u | RUNNING | 2024-06-26T17:59:09.332-07:00 | 2024-06-26T17:59:14.265-07:00 |
+| Compute Engine    | gke-lv-kub-dev-dp-ds-lv-npl-dev-dp-ds-161dcf21-yqq7 | RUNNING | 2024-06-26T19:56:13.641-07:00 | 2024-06-26T19:56:18.651-07:00 |
+| Compute Engine    | gke-lv-kub-dev-dp-ds-lv-npl-dev-dp-ds-458c23a9-7qz0 | RUNNING | 2024-06-26T18:48:38.487-07:00 | 2024-06-26T18:48:43.169-07:00 |
+| Compute Engine    | gke-lv-kub-dev-dp-ds-lv-npl-dev-dp-ds-dca45a90-vglb | RUNNING | 2024-06-27T17:43:14.362-07:00 | 2024-06-27T17:43:19.072-07:00 |
+| Kubernetes Engine | lv-kub-dev-dp-ds-dataiku                            | RUNNING | 2024-01-25T08:11:16+00:00     |                               |
++-------------------+-----------------------------------------------------+---------+-------------------------------+-------------------------------+
+
+[1mChecking services for project: core-data-poc[0m
+==================================================
+
+Running Services:
++-------------------+------------------------------------------+---------+-------------------------------+-------------------------------+
+|      SERVICE      |                 RESOURCE                 | STATUS  |          CREATED AT           |          UPDATED AT           |
++-------------------+------------------------------------------+---------+-------------------------------+-------------------------------+
+| Cloud Run         | poc-ingestion-pull                       | RUNNING | 2024-06-20T09:19:33.974351Z   |                               |
+| Cloud Run         | lv-shane-app                             | RUNNING | 2024-05-20T16:49:24.508318Z   |                               |
+| Cloud Run         | langfuse                                 | RUNNING | 2024-03-27T13:12:45.708893Z   |                               |
+| Cloud Run         | test-exec-private-vertex                 | RUNNING | 2024-02-09T16:33:12.578610Z   |                               |
+| Cloud Run         | debug-eventarc                           | RUNNING | 2023-12-19T17:11:03.332636Z   |                               |
+| Cloud Run         | commission-server                        | RUNNING | 2023-10-03T08:57:31.760332Z   |                               |
+| Cloud Run         | test-alert                               | RUNNING | 2023-09-20T14:02:20.238276Z   |                               |
+| Cloud Run         | tealium-test                             | RUNNING | 2023-01-24T16:13:00.056977Z   |                               |
+| Cloud Run         | lv-dev-dp-cru-landing-to-ingesting2      | RUNNING | 2022-07-01T12:35:25.160035Z   |                               |
+| Cloud Run         | lv-dev-dp-cru-landing-to-ingesting       | RUNNING | 2022-06-27T12:38:50.329154Z   |                               |
+| Cloud Run         | he                                       | RUNNING | 2024-05-17T12:29:37.460986Z   |                               |
+| Compute Engine    | instance-2                               | RUNNING | 2024-02-01T05:44:30.766-08:00 | 2024-02-01T05:44:38.180-08:00 |
+| Kubernetes Engine | europe-west1-composer-test--1da69241-gke | RUNNING | 2023-04-12T08:41:25+00:00     |                               |
++-------------------+------------------------------------------+---------+-------------------------------+-------------------------------+
+
+[1mChecking services for project: product-visual-search-prp[0m
+==================================================
+
+[33mNo running services found for project: product-visual-search-prp[0m
+
+[1mChecking services for project: lv-gcp-out-sbx-eu[0m
+==================================================
+
+Running Services:
++-----------+----------+---------+-----------------------------+------------+
+|  SERVICE  | RESOURCE | STATUS  |         CREATED AT          | UPDATED AT |
++-----------+----------+---------+-----------------------------+------------+
+| Cloud Run | hello    | RUNNING | 2023-04-21T15:24:15.264647Z |            |
++-----------+----------+---------+-----------------------------+------------+
+
+Errors:
++---------------------------+-------------------+--------------------+--------------------------------+
+|          PROJECT          |      SERVICE      |      RESOURCE      |             REASON             |
++---------------------------+-------------------+--------------------+--------------------------------+
+| lv-gcp-dcx-dev-dp-ds-ww   | App Engine        | App Engine Service | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| lv-gcp-dcx-dev-dp-ds-ww   | Cloud SQL         | Cloud SQL Instance | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| lv-gcp-dcx-dev-dp-ds-ww   | BigQuery          | BigQuery Dataset   | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| core-data-poc             | App Engine        | App Engine Service | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| core-data-poc             | Cloud SQL         | Cloud SQL Instance | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| core-data-poc             | BigQuery          | BigQuery Dataset   | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| product-visual-search-prp | Cloud Run         | Cloud Run Service  | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| product-visual-search-prp | App Engine        | App Engine Service | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| product-visual-search-prp | Kubernetes Engine | Kubernetes Cluster | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| product-visual-search-prp | Cloud SQL         | Cloud SQL Instance | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| product-visual-search-prp | BigQuery          | BigQuery Dataset   | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| lv-gcp-out-sbx-eu         | App Engine        | App Engine Service | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| lv-gcp-out-sbx-eu         | Cloud SQL         | Cloud SQL Instance | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
+| lv-gcp-out-sbx-eu         | BigQuery          | BigQuery Dataset   | Permission denied. Ensure      |
+|                           |                   |                    | the service account has the    |
+|                           |                   |                    | required permissions.          |
++---------------------------+-------------------+--------------------+--------------------------------+
